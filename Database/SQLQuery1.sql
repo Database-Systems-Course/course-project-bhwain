@@ -120,5 +120,5 @@ insert into Developers(idDevelopers, DeveloperName, CurrentBalance, Type_2) valu
 
 insert into Employees(idEmployees, Name, Developers_idDevelopers, Designation, Email, Password_2) values (1, 'Shadownite1st', 10, 'Code_Monkey', 'ali3@bootleger.org', 'ohNu:P')
 insert into Employees(idEmployees, Name, Developers_idDevelopers, Designation, Email, Password_2) values (2, 'PajamaLlama', 10, 'Zesty Meme Supreme', 'baffan@bootleger.org', 'wtfSabah1997')
-insert into Employees(idEmployees, Name, Developers_idDevelopers, Designation, Email, Password_2) values (3, 'Felis Catus', 10, 'Napper', 'catto@bootleger.org', 'zzz4eva')*/
---update Employees set Name = 'Oofmur', Developers_idDevelopers = 10, Designation = 'Oh no', Email = 'oof@bootleger.org', Password_2 = 'literallyDidNothing' where idEmployees = 4
+insert into Employees(idEmployees, Name, Developers_idDevelopers, Designation, Email, Password_2) values (3, 'Felis Catus', 10, 'Napper', 'catto@bootleger.org', 'zzz4eva')
+insert into Employees(idEmployees, Name, Developers_idDevelopers, Designation, Email, Password_2) values (4, 'Oofmur', 10, 'Dungeon Master', 'oof@bootleger.org', 'literallyDidNothing')*/
