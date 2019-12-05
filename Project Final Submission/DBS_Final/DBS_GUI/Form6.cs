@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DBS_GUI
 {
-    public partial class Form6 : Form
+    public partial class InfoForm : Form
     {
-        public Form6()
+        public InfoForm()
         {
             InitializeComponent();
         }
@@ -24,8 +24,13 @@ namespace DBS_GUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            Homepage f1 = new Homepage();
             f1.ShowDialog();
+        }
+
+        private void InfoForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

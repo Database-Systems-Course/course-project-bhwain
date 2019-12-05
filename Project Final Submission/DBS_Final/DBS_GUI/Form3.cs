@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DBS_GUI
 {
-    public partial class Form3 : Form
+    public partial class GameDetailForm : Form
     {
-        public Form3()
+        public GameDetailForm(string title, string publisher, string genre)
         {
             InitializeComponent();
         }
@@ -23,6 +23,11 @@ namespace DBS_GUI
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GameDetailForm_Load(object sender, EventArgs e)
         {
 
         }

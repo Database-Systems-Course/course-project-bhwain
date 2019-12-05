@@ -10,17 +10,37 @@ using System.Windows.Forms;
 
 namespace DBS_GUI
 {
-    public partial class Form4 : Form
+    public partial class CustomerForm : Form
     {
-        public Form4()
+        string email = "";
+        string password = "";
+        string f_name = "";
+        string l_name = "";
+
+        public CustomerForm(string email, string password)
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form6 f6 = new Form6();
+            InfoForm f6 = new InfoForm();
             f6.ShowDialog();
+        }
+
+        private void CustomerForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FNameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LNameBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
