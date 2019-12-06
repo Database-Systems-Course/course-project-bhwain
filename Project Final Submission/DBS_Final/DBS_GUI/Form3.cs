@@ -35,6 +35,7 @@ namespace DBS_GUI
         {
 
         }
+<<<<<<< HEAD
 
         private void TitleBox_TextChanged(object sender, EventArgs e)
         {
@@ -72,5 +73,7 @@ namespace DBS_GUI
         {
             //hi2
         }
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
     }
 }

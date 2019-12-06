@@ -22,7 +22,11 @@ namespace DBS_GUI
         string register_name = "";
         string register_id = "";
         string developerid = "";
+<<<<<<< HEAD
         int totalCustomer = 8; 
+=======
+
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         public LoginForm()
         {
             InitializeComponent();
@@ -55,7 +59,11 @@ namespace DBS_GUI
                 using (SqlConnection conn = new SqlConnection())
                 {
 
+<<<<<<< HEAD
                     string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\sj02806\\Downloads\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
                     //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                     conn.ConnectionString = cn;
                     conn.Open();
@@ -91,7 +99,11 @@ namespace DBS_GUI
                                 login_name = String.Format("{0}", reader["Name"]);
                                 Console.WriteLine(myString);
 
+<<<<<<< HEAD
                                 Form f1 = new Homepage(login_name, login_email, login_password);
+=======
+                                Form f1 = new Homepage();
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
                                 this.Hide();
                                 f1.ShowDialog();
                                
@@ -124,7 +136,11 @@ namespace DBS_GUI
             {
                 using (SqlConnection conn = new SqlConnection())
                 {
+<<<<<<< HEAD
                     string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\sj02806\\Downloads\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
                     //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                     conn.ConnectionString = cn;
                     conn.Open();
@@ -219,6 +235,7 @@ namespace DBS_GUI
 
             if (type == "Customer")
             {
+<<<<<<< HEAD
                 using (SqlConnection conn = new SqlConnection())
                 {
                     string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
@@ -281,6 +298,13 @@ namespace DBS_GUI
         
 
 
+=======
+                register_email = LogEmailBox.Text;
+                register_password = LogPasswordBox.Text;
+                CustomerForm f4 = new CustomerForm(register_email, register_password);
+                f4.ShowDialog();
+            }
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             else
             {
                 register_email = LogEmailBox.Text;
@@ -308,6 +332,7 @@ namespace DBS_GUI
         private void LogPasswordBox_TextChanged(object sender, EventArgs e)
         {
 
+<<<<<<< HEAD
         }
 
         private void RegisterGroup_Enter(object sender, EventArgs e)
@@ -333,6 +358,8 @@ namespace DBS_GUI
         private void RegPasswordBox_TextChanged(object sender, EventArgs e)
         {
 
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         }
     }
 }

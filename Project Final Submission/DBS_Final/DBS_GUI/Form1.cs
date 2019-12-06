@@ -14,6 +14,7 @@ namespace DBS_GUI
     public partial class Homepage : Form
     {
         public string _textBox1 = "";
+<<<<<<< HEAD
         string title = "";
         string publisher = "";
         List<Container> myList = new List<Container>();
@@ -32,10 +33,18 @@ namespace DBS_GUI
             _email = email;
             _password = password;
           
+=======
+
+        public Homepage()
+        {
+            InitializeComponent();
+            _textBox1 = "";
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             using (SqlConnection conn = new SqlConnection())
             {
                
@@ -73,6 +82,10 @@ namespace DBS_GUI
                     }
                 }
                 conn.Close();
+=======
+           
+        }
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
 
 
             }
@@ -105,7 +118,11 @@ namespace DBS_GUI
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.Hide();
+<<<<<<< HEAD
             Homepage f1 = new Homepage(_name,_email,_password);
+=======
+            Homepage f1 = new Homepage();
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             f1.ShowDialog();
         }
 
@@ -143,6 +160,7 @@ namespace DBS_GUI
 
         private void ProfileButton_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             CustomerForm f4 = new CustomerForm(_name,_email,_password);
             f4.ShowDialog();
         }
@@ -187,5 +205,10 @@ namespace DBS_GUI
                 f1.ShowDialog();
             } 
         }
+=======
+            CustomerForm f4 = new CustomerForm("","");
+            f4.ShowDialog();
+        }
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
     }
 }

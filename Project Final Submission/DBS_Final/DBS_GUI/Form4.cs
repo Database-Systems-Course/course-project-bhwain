@@ -17,12 +17,17 @@ namespace DBS_GUI
         string password = "";
         string f_name = "";
         string l_name = "";
+<<<<<<< HEAD
         string g_name = "";
         string g_p = "";
         string g_g = "";
         List<Container> myList = new List<Container>();
 
         public CustomerForm(string name, string email, string password)
+=======
+
+        public CustomerForm(string email, string password)
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         {
             InitializeComponent();
             FNameBox.Text = name;
@@ -38,6 +43,7 @@ namespace DBS_GUI
 
         private void CustomerForm_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             using (SqlConnection conn = new SqlConnection())
             {
                 string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
@@ -90,6 +96,9 @@ namespace DBS_GUI
                     PurchasedBox.Refresh();
                 }
             }
+=======
+
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         }
 
         private void FNameBox_TextChanged(object sender, EventArgs e)
@@ -101,6 +110,7 @@ namespace DBS_GUI
         {
 
         }
+<<<<<<< HEAD
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -126,5 +136,7 @@ namespace DBS_GUI
         {
 
         }
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
     }
 }

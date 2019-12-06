@@ -60,6 +60,7 @@ C:\Users\sj02806\Downloads\course-project-bhwain\course-project-bhwain\course-pr
 C:\Users\sj02806\Downloads\course-project-bhwain\course-project-bhwain\course-project-bhwain\Project Final Submission\DBS_Final\DBS_GUI\obj\Debug\DBS_GUI.exe
 C:\Users\sj02806\Downloads\course-project-bhwain\course-project-bhwain\course-project-bhwain\Project Final Submission\DBS_Final\DBS_GUI\obj\Debug\DBS_GUI.pdb
 C:\Users\sj02806\Downloads\course-project-bhwain\course-project-bhwain\course-project-bhwain\Project Final Submission\DBS_Final\DBS_GUI\obj\Debug\DBS_GUI.Form8.resources
+<<<<<<< HEAD
 C:\Users\123\Downloads\course-project-bhwain (1)\course-project-bhwain\course-project-bhwain\course-project-bhwain\Project Final Submission\DBS_Final\DBS_GUI\obj\Debug\DBS_GUI.csprojAssemblyReference.cache
 C:\Users\123\Downloads\course-project-bhwain (1)\course-project-bhwain\course-project-bhwain\course-project-bhwain\Project Final Submission\DBS_Final\DBS_GUI\obj\Debug\DBS_GUI.Homepage.resources
 C:\Users\123\Downloads\course-project-bhwain (1)\course-project-bhwain\course-project-bhwain\course-project-bhwain\Project Final Submission\DBS_Final\DBS_GUI\obj\Debug\DBS_GUI.LoginForm.resources
@@ -115,3 +116,5 @@ C:\Users\si03013\Downloads\course-project-bhwain (2)\course-project-bhwain\cours
 C:\Users\si03013\Downloads\course-project-bhwain (2)\course-project-bhwain\course-project-bhwain\course-project-bhwain\Project Final Submission\DBS_Final\DBS_GUI\obj\Debug\DBS_GUI.csproj.CoreCompileInputs.cache
 C:\Users\si03013\Downloads\course-project-bhwain (2)\course-project-bhwain\course-project-bhwain\course-project-bhwain\Project Final Submission\DBS_Final\DBS_GUI\obj\Debug\DBS_GUI.exe
 C:\Users\si03013\Downloads\course-project-bhwain (2)\course-project-bhwain\course-project-bhwain\course-project-bhwain\Project Final Submission\DBS_Final\DBS_GUI\obj\Debug\DBS_GUI.pdb
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b

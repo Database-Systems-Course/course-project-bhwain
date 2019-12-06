@@ -13,8 +13,11 @@ namespace DBS_GUI
 {
     public partial class InfoForm : Form
     {
+<<<<<<< HEAD
         string c_email = "";
         string c_Password = "";
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         public InfoForm()
         {
             InitializeComponent();
@@ -30,6 +33,7 @@ namespace DBS_GUI
 
         private void button3_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             using (SqlConnection conn = new SqlConnection())
             {
                 string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
@@ -69,6 +73,15 @@ namespace DBS_GUI
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+=======
+            Homepage f1 = new Homepage();
+            f1.ShowDialog();
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+        }
+
+        private void InfoForm_Load(object sender, EventArgs e)
         {
 
         }

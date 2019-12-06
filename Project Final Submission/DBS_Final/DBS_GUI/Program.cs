@@ -16,7 +16,11 @@ namespace DBS_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new LoginForm());
+=======
+            Application.Run(new Homepage());
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         }
     }
 }

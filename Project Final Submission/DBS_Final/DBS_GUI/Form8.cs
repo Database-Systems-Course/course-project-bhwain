@@ -7,12 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using System.Data.SqlClient;
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
 
 namespace DBS_GUI
 {
     public partial class Form8 : Form
     {
+<<<<<<< HEAD
         string d_name = "";
         string n_genre = "";
         string n_title = "";
@@ -26,6 +30,11 @@ namespace DBS_GUI
             n_title = textBox1.Text;
             n_price = textBox3.Text;
             pre_name = name;
+=======
+        public Form8()
+        {
+            InitializeComponent();
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -52,6 +61,7 @@ namespace DBS_GUI
         {
 
         }
+<<<<<<< HEAD
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
@@ -88,5 +98,7 @@ namespace DBS_GUI
                 }
             }
         }
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
     }
 }

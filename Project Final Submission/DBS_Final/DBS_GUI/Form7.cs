@@ -17,13 +17,20 @@ namespace DBS_GUI
         string title = "";
         string publisher = "";
         string genre = "";
+<<<<<<< HEAD
         List<Container> myList = new List<Container>();
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         public SearchResultForm(string _textBox1)
         {
             InitializeComponent();
             searched = _textBox1;
             ResultList.Items.Clear();
+<<<<<<< HEAD
 
+=======
+           
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         }
 
         private void Form7_Load(object sender, EventArgs e)
@@ -33,6 +40,7 @@ namespace DBS_GUI
                 if (searched != "" || searched == null)
                 {
                     //join here
+<<<<<<< HEAD
                     //string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
                     ////conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                     //conn.ConnectionString = cn;
@@ -57,24 +65,51 @@ namespace DBS_GUI
                     //        genre = String.Format("{0}", reader["Genre"]);
                     //        Container a = new Container(title, publisher, genre);
                     //        myList.Add(a);
+=======
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\sj02806\\Downloads\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+                    //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
+                    conn.ConnectionString = cn;
+                    conn.Open();
+
+                    SqlCommand command = new SqlCommand("SELECT * FROM [Game] WHERE CONVERT(VARCHAR, Title) = '" + searched + "';", conn);
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            List<string> MyList = new List<string>();
+                            MyList.Add(String.Format("Game Name: {0}, Game Price: {1}, Game Genre: {2}, Game Developer: {3}", reader["Title"], reader["Price"], reader["Genres_idGenres"], reader["Developers_idDevelopers"]));
+
+                            ResultList.DataSource = MyList;
+                            ResultList.Refresh();
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
                         }
                     }
                 }
                 else
                 {
                     //join here
+<<<<<<< HEAD
                     string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\sj02806\\Downloads\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
                     //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                     conn.ConnectionString = cn;
                     conn.Open();
 
+<<<<<<< HEAD
                     SqlCommand command = new SqlCommand("create table #game_search (Name varchar(20),Genre varchar(20), Developer varchar(20), Price varchar(20)) INSERT INTO #game_search(Name, Genre, Developer, Price) SElECT g.Title, f.Name, d.DeveloperName, g.Price from Game g, Genres f, Developers d where g.Genres_idGenres = f.idGenres and d.idDevelopers = g.Developers_idDevelopers Select * from #game_search", conn);
+=======
+                    SqlCommand command = new SqlCommand("SELECT * FROM [Game];", conn);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
                         List<string> MyList = new List<string>();
                         while (reader.Read())
                         {
+<<<<<<< HEAD
                             Console.WriteLine("!@#!@!!@#" + String.Format("Game Name: {0}, Game Price: {1}, Game Genre: {2}, Game Developer: {3}", reader["Name"], reader["Price"], reader["Genre"], reader["Developer"]));
     
                             MyList.Add(String.Format("Game Name: {0}, Game Price: {1}, Game Genre: {2}, Game Developer: {3}", reader["Name"], reader["Price"], reader["Genre"], reader["Developer"]));
@@ -87,6 +122,14 @@ namespace DBS_GUI
                         ResultList.DataSource = MyList;
                         ResultList.Refresh();
                         
+=======
+                            
+                            MyList.Add(String.Format("Game Name: {0}, Game Price: {1}, Game Genre: {2}, Game Developer: {3}", reader["Title"], reader["Price"], reader["Genres_idGenres"], reader["Developers_idDevelopers"]));
+ 
+                        }
+                        ResultList.DataSource = MyList;
+                        ResultList.Refresh();
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
                     }
                 }
                 searched = "";
@@ -98,8 +141,13 @@ namespace DBS_GUI
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Homepage p = new Homepage("","","");
 
+=======
+            Homepage p = new Homepage();
+           
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
@@ -128,6 +176,7 @@ namespace DBS_GUI
 
         private void ResultList_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
+<<<<<<< HEAD
 
             int index = this.ResultList.IndexFromPoint(e.Location);
             if (index != System.Windows.Forms.ListBox.NoMatches)
@@ -137,16 +186,25 @@ namespace DBS_GUI
                 publisher = con.con_publisher;
                 genre = con.con_genre;
 
+=======
+ 
+            int index = this.ResultList.IndexFromPoint(e.Location);
+            if (index != System.Windows.Forms.ListBox.NoMatches)
+            {
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
                 GameDetailForm f1 = new GameDetailForm(title, publisher, genre);
 
                 this.Hide();
                 f1.ShowDialog();
             }
+<<<<<<< HEAD
         }
 
         private void ResultGroup_Enter(object sender, EventArgs e)
         {
 
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         }
     }
    
