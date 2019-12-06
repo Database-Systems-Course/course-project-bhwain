@@ -24,16 +24,40 @@ namespace DBS_GUI
             _email = email;
             _password = password;
             _name = name;
-            NameBox.Text = _name;
-            
+
             using (SqlConnection conn = new SqlConnection())
             {
-                string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\sj02806\\Downloads\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+                string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
                 //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                 conn.ConnectionString = cn;
                 conn.Open();
 
-                SqlCommand command = new SqlCommand("SELECT * FROM [Employees] WHERE CONVERT(VARCHAR, Developers_idDevelopers) = '" + developerid + "';", conn);
+                SqlCommand command = new SqlCommand("SELECT DeveloperName FROM [Developers] WHERE CONVERT(VARCHAR, idDevelopers) = '" + developerid + "';", conn);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+     
+                    while (reader.Read())
+                    {
+ 
+                        NameBox.Text = String.Format("{0}", reader["DeveloperName"]);
+
+                    }
+  
+                }
+        
+                conn.Close();
+            }
+
+
+            using (SqlConnection conn = new SqlConnection())
+            {
+                string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+                //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
+                conn.ConnectionString = cn;
+                conn.Open();
+
+                SqlCommand command = new SqlCommand("SELECT Name, designation FROM [Employees] WHERE CONVERT(VARCHAR, Developers_idDevelopers) = '" + developerid + "';", conn);
                 
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
@@ -41,15 +65,15 @@ namespace DBS_GUI
                     while (reader.Read())
                     {
                         Console.WriteLine("Check2");
-                        string myString = String.Format("{0}", reader["Developers_idDevelopers"]);
-
+                        string myString = String.Format("{0}", reader["Name"]);
+                        DirectorBox.Text = String.Format("{0}", reader["Designation"]);
                         myEmployees.Add(myString); 
                     }
                     TeamList.DataSource = myEmployees;
                     TeamList.Refresh();
                
                 }
-                SqlCommand c = new SqlCommand("SELECT * FROM [Game] WHERE CONVERT(VARCHAR, Developers_idDevelopers) = '" + developerid + "';", conn);
+                SqlCommand c = new SqlCommand("SELECT Title FROM [Game] WHERE CONVERT(VARCHAR, Developers_idDevelopers) = '" + developerid + "';", conn);
 
                 using (SqlDataReader reader = c.ExecuteReader())
                 {
@@ -57,7 +81,7 @@ namespace DBS_GUI
                     while (reader.Read())
                     {
                         Console.WriteLine("Check2");
-                        string myString = String.Format("{0}", reader["Developers_idDevelopers"]);
+                        string myString = String.Format("{0}", reader["Title"]);
 
                         myTitles.Add(myString);
                     }
@@ -125,6 +149,11 @@ namespace DBS_GUI
         }
 
         private void TeamList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TitlesList_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

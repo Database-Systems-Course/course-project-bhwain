@@ -22,7 +22,7 @@ namespace DBS_GUI
         string register_name = "";
         string register_id = "";
         string developerid = "";
-
+        int totalCustomer = 1; 
         public LoginForm()
         {
             InitializeComponent();
@@ -55,7 +55,7 @@ namespace DBS_GUI
                 using (SqlConnection conn = new SqlConnection())
                 {
 
-                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\sj02806\\Downloads\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
                     //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                     conn.ConnectionString = cn;
                     conn.Open();
@@ -91,7 +91,7 @@ namespace DBS_GUI
                                 login_name = String.Format("{0}", reader["Name"]);
                                 Console.WriteLine(myString);
 
-                                Form f1 = new Homepage();
+                                Form f1 = new Homepage(login_name, login_email, login_password);
                                 this.Hide();
                                 f1.ShowDialog();
                                
@@ -124,7 +124,7 @@ namespace DBS_GUI
             {
                 using (SqlConnection conn = new SqlConnection())
                 {
-                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\sj02806\\Downloads\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
                     //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                     conn.ConnectionString = cn;
                     conn.Open();
@@ -219,11 +219,99 @@ namespace DBS_GUI
 
             if (type == "Customer")
             {
-                register_email = LogEmailBox.Text;
-                register_password = LogPasswordBox.Text;
-                CustomerForm f4 = new CustomerForm(register_email, register_password);
-                f4.ShowDialog();
+                using (SqlConnection conn = new SqlConnection())
+                {
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+                    //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
+                    conn.ConnectionString = cn;
+                    conn.Open();
+
+                    SqlCommand command = new SqlCommand("SELECT * FROM [Customers]", conn);
+
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            totalCustomer += 1;
+                        }
+
+                        reader.Close();
+                    }
+                    conn.Close();
+                }
+
+                using (SqlConnection c = new SqlConnection())
+                {
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+                    //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
+                    c.ConnectionString = cn;
+                    c.Open();
+
+                    SqlCommand comm = new SqlCommand("SELECT * FROM [Customers] WHERE CONVERT(VARCHAR, Name) = '" + textBox1.Text + "' or CONVERT(VARCHAR, EmailID) = '" + RegEmailBox.Text + "';", c);
+
+                    
+                    using (SqlDataReader reader = comm.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+
+                            string myString = String.Format("{0} {1}", reader["Name"], reader["EmailID"]);
+
+                            if (myString != null)
+                            {
+                                string message = "Choose a different name or email";
+                                string caption = "Register";
+                                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                                DialogResult result;
+
+                                // Displays the MessageBox.
+                                result = MessageBox.Show(message, caption, buttons);
+                                if (result == System.Windows.Forms.DialogResult.Yes)
+                                {
+                                    // Closes the parent form.
+                                    this.Close();
+                                }
+                            }
+                            
+                           
+                        }
+                        else
+                        {
+                            this.Hide();
+                            reader.Close();
+                            SqlCommand sqlCommand = new SqlCommand("Insert into Customers(idCustomers, name, emailid, password_2) values ('" + totalCustomer + "', '" + textBox1.Text + "', " + "'" + RegEmailBox.Text + "'," + "'" + RegPasswordBox.Text + "');", c);
+
+                            using (SqlDataReader r = sqlCommand.ExecuteReader())
+                            {
+                                if (r.Read())
+                                {
+                                    Console.WriteLine("Can register");
+                                }
+                            }
+                            register_name = textBox1.Text;
+                            register_email = RegEmailBox.Text;
+                            register_password = RegPasswordBox.Text;
+                            CustomerForm f4 = new CustomerForm(register_name, register_email, register_password);
+                            f4.ShowDialog();
+                            textBox1.Text = "Name";
+                            RegEmailBox.Text = "Email";
+                            RegPasswordBox.Text = "Password";
+                            radioButton3.Checked = false;
+                            this.Show();
+
+                        }
+
+                    }
+
+                    c.Close();
+
+                }
+                
             }
+        
+
+
             else
             {
                 register_email = LogEmailBox.Text;
@@ -231,6 +319,7 @@ namespace DBS_GUI
                 DevForm f5 = new DevForm(register_email, register_password, register_name, register_id);
                 f5.ShowDialog();
             }
+           
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
@@ -249,6 +338,31 @@ namespace DBS_GUI
         }
 
         private void LogPasswordBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegisterGroup_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegEmailBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegPasswordBox_TextChanged(object sender, EventArgs e)
         {
 
         }

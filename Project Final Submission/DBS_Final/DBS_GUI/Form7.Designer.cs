@@ -45,6 +45,7 @@
             this.ResultGroup.TabIndex = 14;
             this.ResultGroup.TabStop = false;
             this.ResultGroup.Text = "Results";
+            this.ResultGroup.Enter += new System.EventHandler(this.ResultGroup_Enter);
             // 
             // ResultList
             // 

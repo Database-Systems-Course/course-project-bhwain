@@ -90,6 +90,7 @@
             // WishCheck
             // 
             this.WishCheck.AutoSize = true;
+            this.WishCheck.Enabled = false;
             this.WishCheck.Location = new System.Drawing.Point(99, 155);
             this.WishCheck.Margin = new System.Windows.Forms.Padding(2);
             this.WishCheck.Name = "WishCheck";
@@ -102,6 +103,7 @@
             // PurchasedCheck
             // 
             this.PurchasedCheck.AutoSize = true;
+            this.PurchasedCheck.Enabled = false;
             this.PurchasedCheck.Location = new System.Drawing.Point(99, 118);
             this.PurchasedCheck.Margin = new System.Windows.Forms.Padding(2);
             this.PurchasedCheck.Name = "PurchasedCheck";
@@ -156,6 +158,7 @@
             this.PublisherBox.Name = "PublisherBox";
             this.PublisherBox.Size = new System.Drawing.Size(189, 26);
             this.PublisherBox.TabIndex = 1;
+            this.PublisherBox.TextChanged += new System.EventHandler(this.PublisherBox_TextChanged);
             // 
             // TitleBox
             // 
@@ -164,6 +167,7 @@
             this.TitleBox.Name = "TitleBox";
             this.TitleBox.Size = new System.Drawing.Size(189, 26);
             this.TitleBox.TabIndex = 0;
+            this.TitleBox.TextChanged += new System.EventHandler(this.TitleBox_TextChanged);
             // 
             // WishButton
             // 
@@ -175,6 +179,7 @@
             this.WishButton.TabIndex = 3;
             this.WishButton.Text = "Wishlist";
             this.WishButton.UseVisualStyleBackColor = true;
+            this.WishButton.Click += new System.EventHandler(this.WishButton_Click);
             // 
             // BuyButton
             // 

@@ -15,6 +15,9 @@ namespace DBS_GUI
         public GameDetailForm(string title, string publisher, string genre)
         {
             InitializeComponent();
+            TitleBox.Text = title;
+            PublisherBox.Text = publisher;
+            GenreBox.Text = genre;
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -28,6 +31,21 @@ namespace DBS_GUI
         }
 
         private void GameDetailForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TitleBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PublisherBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WishButton_Click(object sender, EventArgs e)
         {
 
         }
