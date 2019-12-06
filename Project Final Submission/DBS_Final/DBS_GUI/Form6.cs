@@ -7,16 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace DBS_GUI
 {
-    public partial class Form6 : Form
+    public partial class InfoForm : Form
     {
-        public Form6()
+        string c_email = "";
+        string c_Password = "";
+        public InfoForm()
         {
             InitializeComponent();
-        }
+            c_email = EmailBox.Text;
+            c_Password = ConfirmPasswordBox.Text;
 
+        }
+         
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
@@ -24,8 +30,47 @@ namespace DBS_GUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.ShowDialog();
+            using (SqlConnection conn = new SqlConnection())
+            {
+                string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+                //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
+                conn.ConnectionString = cn;
+                conn.Open();
+
+                SqlCommand command = new SqlCommand("UPDATE [Customers] SET EmailID ='" + c_email + "',Password_2 = '" + c_Password + "' ;", conn);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    //if more stuff needed
+                }
+            }
+            //Homepage f1 = new Homepage();
+            //f1.ShowDialog();
+        }
+
+        private void InfoForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmailBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FNameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
