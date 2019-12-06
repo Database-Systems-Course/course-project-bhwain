@@ -22,7 +22,15 @@ namespace DBS_GUI
         string register_name = "";
         string register_id = "";
         string developerid = "";
+<<<<<<< HEAD
         int totalCustomer = 1; 
+=======
+<<<<<<< HEAD
+        int totalCustomer = 8; 
+=======
+
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
         public LoginForm()
         {
             InitializeComponent();
@@ -55,7 +63,15 @@ namespace DBS_GUI
                 using (SqlConnection conn = new SqlConnection())
                 {
 
+<<<<<<< HEAD
                     string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
+<<<<<<< HEAD
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\sj02806\\Downloads\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                     //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                     conn.ConnectionString = cn;
                     conn.Open();
@@ -91,7 +107,15 @@ namespace DBS_GUI
                                 login_name = String.Format("{0}", reader["Name"]);
                                 Console.WriteLine(myString);
 
+<<<<<<< HEAD
                                 Form f1 = new Homepage(login_name, login_email, login_password);
+=======
+<<<<<<< HEAD
+                                Form f1 = new Homepage(login_name, login_email, login_password);
+=======
+                                Form f1 = new Homepage();
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                                 this.Hide();
                                 f1.ShowDialog();
                                
@@ -124,7 +148,15 @@ namespace DBS_GUI
             {
                 using (SqlConnection conn = new SqlConnection())
                 {
+<<<<<<< HEAD
                     string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
+<<<<<<< HEAD
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\sj02806\\Downloads\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                     //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                     conn.ConnectionString = cn;
                     conn.Open();
@@ -219,13 +251,21 @@ namespace DBS_GUI
 
             if (type == "Customer")
             {
+<<<<<<< HEAD
                 using (SqlConnection conn = new SqlConnection())
                 {
                     string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
+<<<<<<< HEAD
+                using (SqlConnection conn = new SqlConnection())
+                {
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                     //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                     conn.ConnectionString = cn;
                     conn.Open();
 
+<<<<<<< HEAD
                     SqlCommand command = new SqlCommand("SELECT * FROM [Customers]", conn);
 
 
@@ -253,6 +293,13 @@ namespace DBS_GUI
                     
                     using (SqlDataReader reader = comm.ExecuteReader())
                     {
+=======
+                    SqlCommand command = new SqlCommand("SELECT * FROM [Customers] WHERE CONVERT(VARCHAR, Name) = '" + textBox1.Text + "' or CONVERT(VARCHAR, EmailID) = '" + RegEmailBox.Text + "';", conn);
+            
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                         if (reader.Read())
                         {
 
@@ -273,20 +320,32 @@ namespace DBS_GUI
                                     this.Close();
                                 }
                             }
+<<<<<<< HEAD
                             
+=======
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                            
                         }
                         else
                         {
+<<<<<<< HEAD
                             this.Hide();
                             reader.Close();
                             SqlCommand sqlCommand = new SqlCommand("Insert into Customers(idCustomers, name, emailid, password_2) values ('" + totalCustomer + "', '" + textBox1.Text + "', " + "'" + RegEmailBox.Text + "'," + "'" + RegPasswordBox.Text + "');", c);
+=======
+                            reader.Close();
+                            SqlCommand sqlCommand = new SqlCommand("Insert into Customers(idCustomers, name, emailid, password_2) values ('" + totalCustomer + "', '" + textBox1.Text + "', " + "'" + RegEmailBox.Text + "'," + "'" + RegPasswordBox.Text + "');", conn);
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
 
                             using (SqlDataReader r = sqlCommand.ExecuteReader())
                             {
                                 if (r.Read())
                                 {
                                     Console.WriteLine("Can register");
+<<<<<<< HEAD
+=======
+                                    totalCustomer += 1;
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                                 }
                             }
                             register_name = textBox1.Text;
@@ -294,16 +353,20 @@ namespace DBS_GUI
                             register_password = RegPasswordBox.Text;
                             CustomerForm f4 = new CustomerForm(register_name, register_email, register_password);
                             f4.ShowDialog();
+<<<<<<< HEAD
                             textBox1.Text = "Name";
                             RegEmailBox.Text = "Email";
                             RegPasswordBox.Text = "Password";
                             radioButton3.Checked = false;
                             this.Show();
 
+=======
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                         }
 
                     }
 
+<<<<<<< HEAD
                     c.Close();
 
                 }
@@ -312,6 +375,21 @@ namespace DBS_GUI
         
 
 
+=======
+                    conn.Close();
+                }
+            }
+        
+
+
+=======
+                register_email = LogEmailBox.Text;
+                register_password = LogPasswordBox.Text;
+                CustomerForm f4 = new CustomerForm(register_email, register_password);
+                f4.ShowDialog();
+            }
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             else
             {
                 register_email = LogEmailBox.Text;
@@ -340,6 +418,34 @@ namespace DBS_GUI
         private void LogPasswordBox_TextChanged(object sender, EventArgs e)
         {
 
+<<<<<<< HEAD
+        }
+
+        private void RegisterGroup_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegEmailBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegPasswordBox_TextChanged(object sender, EventArgs e)
+        {
+
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
         }
 
         private void RegisterGroup_Enter(object sender, EventArgs e)

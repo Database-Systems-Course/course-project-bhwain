@@ -17,12 +17,25 @@ namespace DBS_GUI
         string password = "";
         string f_name = "";
         string l_name = "";
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
         string g_name = "";
         string g_p = "";
         string g_g = "";
         List<Container> myList = new List<Container>();
+<<<<<<< HEAD
 
         public CustomerForm(string name, string email, string password)
+=======
+
+        public CustomerForm(string name, string email, string password)
+=======
+
+        public CustomerForm(string email, string password)
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
         {
             InitializeComponent();
             FNameBox.Text = name;
@@ -41,6 +54,7 @@ namespace DBS_GUI
 
         private void CustomerForm_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             using (SqlConnection conn = new SqlConnection())
             {
                 string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
@@ -93,6 +107,64 @@ namespace DBS_GUI
                     PurchasedBox.Refresh();
                 }
             }
+=======
+<<<<<<< HEAD
+            using (SqlConnection conn = new SqlConnection())
+            {
+                string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+                //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
+                conn.ConnectionString = cn;
+                conn.Open();
+
+                SqlCommand command = new SqlCommand("select Title from Game where registration_id = (select w.game_registration_id from wishlist w where w.Customers_idCustomers = (select idCustomers from Customers where convert(varchar(20),Name) = '" + FNameBox.Text + "')) ;", conn);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    List<string> MyList = new List<string>();
+                    while (reader.Read())
+                    {
+
+                        MyList.Add(String.Format("{0}", reader["Title"]));
+                        g_name = String.Format("{0}", reader["Title"]);
+                        // g_p = String.Format("{0}", reader["Price"]);
+                        //  g_g = String.Format("{0}", reader["Genre"]);
+                        Container a = new Container(g_name, "", "");
+                        myList.Add(a);
+                    }
+                    WishBox.DataSource = MyList;
+                    WishBox.Refresh();
+                }
+            }
+            using (SqlConnection conn = new SqlConnection())
+            {
+                string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+                //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
+                conn.ConnectionString = cn;
+                conn.Open();
+
+                SqlCommand command = new SqlCommand("select Title from Game where registration_id = (select o.game_registration_id from owns o where o.Customers_idCustomers = (select idCustomers from Customers where convert(varchar(20), Name) = '" + FNameBox.Text + "')) ; ", conn);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    List<string> MyList = new List<string>();
+                    while (reader.Read())
+                    {
+
+                        MyList.Add(String.Format("{0}", reader["Title"]));
+                        g_name = String.Format("{0}", reader["Title"]);
+                        // g_p = String.Format("{1}", reader["Price"]);
+                        //  g_g = String.Format("{2}", reader["Genre"]);
+                        Container a = new Container(g_name, "", "");
+                        myList.Add(a);
+                    }
+                    PurchasedBox.DataSource = MyList;
+                    PurchasedBox.Refresh();
+                }
+            }
+=======
+
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
         }
 
         private void FNameBox_TextChanged(object sender, EventArgs e)
@@ -104,6 +176,10 @@ namespace DBS_GUI
         {
 
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -122,12 +198,23 @@ namespace DBS_GUI
 
         private void WishBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
         }
 
         private void PurchasedBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             
         }
+=======
+
+        }
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
     }
 }

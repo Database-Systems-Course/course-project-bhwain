@@ -90,11 +90,22 @@
             // WishCheck
             // 
             this.WishCheck.AutoSize = true;
+<<<<<<< HEAD
+            this.WishCheck.Enabled = false;
+=======
+<<<<<<< HEAD
             this.WishCheck.Enabled = false;
             this.WishCheck.Location = new System.Drawing.Point(99, 155);
             this.WishCheck.Margin = new System.Windows.Forms.Padding(2);
             this.WishCheck.Name = "WishCheck";
+            this.WishCheck.Size = new System.Drawing.Size(90, 24);
+=======
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
+            this.WishCheck.Location = new System.Drawing.Point(99, 155);
+            this.WishCheck.Margin = new System.Windows.Forms.Padding(2);
+            this.WishCheck.Name = "WishCheck";
             this.WishCheck.Size = new System.Drawing.Size(85, 24);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             this.WishCheck.TabIndex = 7;
             this.WishCheck.Text = "Wishlist";
             this.WishCheck.UseVisualStyleBackColor = true;
@@ -103,11 +114,22 @@
             // PurchasedCheck
             // 
             this.PurchasedCheck.AutoSize = true;
+<<<<<<< HEAD
+            this.PurchasedCheck.Enabled = false;
+=======
+<<<<<<< HEAD
             this.PurchasedCheck.Enabled = false;
             this.PurchasedCheck.Location = new System.Drawing.Point(99, 118);
             this.PurchasedCheck.Margin = new System.Windows.Forms.Padding(2);
             this.PurchasedCheck.Name = "PurchasedCheck";
+            this.PurchasedCheck.Size = new System.Drawing.Size(113, 24);
+=======
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
+            this.PurchasedCheck.Location = new System.Drawing.Point(99, 118);
+            this.PurchasedCheck.Margin = new System.Windows.Forms.Padding(2);
+            this.PurchasedCheck.Name = "PurchasedCheck";
             this.PurchasedCheck.Size = new System.Drawing.Size(107, 24);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             this.PurchasedCheck.TabIndex = 6;
             this.PurchasedCheck.Text = "Purchased";
             this.PurchasedCheck.UseVisualStyleBackColor = true;
@@ -119,7 +141,11 @@
             this.label3.Location = new System.Drawing.Point(33, 88);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
+<<<<<<< HEAD
+            this.label3.Size = new System.Drawing.Size(64, 20);
+=======
             this.label3.Size = new System.Drawing.Size(58, 20);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             this.label3.TabIndex = 5;
             this.label3.Text = "Genre:";
             // 
@@ -129,7 +155,11 @@
             this.label2.Location = new System.Drawing.Point(8, 61);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
+<<<<<<< HEAD
+            this.label2.Size = new System.Drawing.Size(88, 20);
+=======
             this.label2.Size = new System.Drawing.Size(83, 20);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             this.label2.TabIndex = 4;
             this.label2.Text = "Publisher:";
             // 
@@ -139,7 +169,11 @@
             this.label1.Location = new System.Drawing.Point(46, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
+<<<<<<< HEAD
+            this.label1.Size = new System.Drawing.Size(48, 20);
+=======
             this.label1.Size = new System.Drawing.Size(45, 20);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             this.label1.TabIndex = 3;
             this.label1.Text = "Title:";
             // 
@@ -158,7 +192,14 @@
             this.PublisherBox.Name = "PublisherBox";
             this.PublisherBox.Size = new System.Drawing.Size(189, 26);
             this.PublisherBox.TabIndex = 1;
+<<<<<<< HEAD
             this.PublisherBox.TextChanged += new System.EventHandler(this.PublisherBox_TextChanged);
+=======
+<<<<<<< HEAD
+            this.PublisherBox.TextChanged += new System.EventHandler(this.PublisherBox_TextChanged);
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // TitleBox
             // 
@@ -167,7 +208,14 @@
             this.TitleBox.Name = "TitleBox";
             this.TitleBox.Size = new System.Drawing.Size(189, 26);
             this.TitleBox.TabIndex = 0;
+<<<<<<< HEAD
             this.TitleBox.TextChanged += new System.EventHandler(this.TitleBox_TextChanged);
+=======
+<<<<<<< HEAD
+            this.TitleBox.TextChanged += new System.EventHandler(this.TitleBox_TextChanged);
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // WishButton
             // 
@@ -179,7 +227,14 @@
             this.WishButton.TabIndex = 3;
             this.WishButton.Text = "Wishlist";
             this.WishButton.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.WishButton.Click += new System.EventHandler(this.WishButton_Click);
+=======
+<<<<<<< HEAD
+            this.WishButton.Click += new System.EventHandler(this.WishButton_Click);
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // BuyButton
             // 
@@ -191,6 +246,10 @@
             this.BuyButton.TabIndex = 4;
             this.BuyButton.Text = "Buy Now";
             this.BuyButton.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+            this.BuyButton.Click += new System.EventHandler(this.BuyButton_Click);
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             // 
             // GameDetailForm
             // 

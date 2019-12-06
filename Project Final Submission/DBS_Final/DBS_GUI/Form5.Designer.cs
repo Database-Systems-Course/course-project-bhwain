@@ -50,7 +50,15 @@
             this.label1.Location = new System.Drawing.Point(27, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
+<<<<<<< HEAD
             this.label1.Size = new System.Drawing.Size(66, 24);
+=======
+<<<<<<< HEAD
+            this.label1.Size = new System.Drawing.Size(66, 24);
+=======
+            this.label1.Size = new System.Drawing.Size(69, 24);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.label1.TabIndex = 1;
             this.label1.Text = "Profile";
             // 
@@ -61,7 +69,15 @@
             this.label2.Location = new System.Drawing.Point(11, 52);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
+<<<<<<< HEAD
             this.label2.Size = new System.Drawing.Size(116, 18);
+=======
+<<<<<<< HEAD
+            this.label2.Size = new System.Drawing.Size(116, 18);
+=======
+            this.label2.Size = new System.Drawing.Size(125, 17);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.label2.TabIndex = 7;
             this.label2.Text = "Company Name:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -82,7 +98,15 @@
             this.label4.Location = new System.Drawing.Point(37, 73);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
+<<<<<<< HEAD
             this.label4.Size = new System.Drawing.Size(90, 18);
+=======
+<<<<<<< HEAD
+            this.label4.Size = new System.Drawing.Size(90, 18);
+=======
+            this.label4.Size = new System.Drawing.Size(100, 17);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.label4.TabIndex = 9;
             this.label4.Text = "Date Joined:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -103,7 +127,15 @@
             this.label3.Location = new System.Drawing.Point(78, 122);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
+<<<<<<< HEAD
             this.label3.Size = new System.Drawing.Size(49, 18);
+=======
+<<<<<<< HEAD
+            this.label3.Size = new System.Drawing.Size(49, 18);
+=======
+            this.label3.Size = new System.Drawing.Size(53, 17);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.label3.TabIndex = 10;
             this.label3.Text = "Team:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -124,7 +156,15 @@
             this.label5.Location = new System.Drawing.Point(63, 97);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
+<<<<<<< HEAD
             this.label5.Size = new System.Drawing.Size(64, 18);
+=======
+<<<<<<< HEAD
+            this.label5.Size = new System.Drawing.Size(64, 18);
+=======
+            this.label5.Size = new System.Drawing.Size(71, 17);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.label5.TabIndex = 13;
             this.label5.Text = "Director:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -150,7 +190,14 @@
             this.TitlesList.Name = "TitlesList";
             this.TitlesList.Size = new System.Drawing.Size(207, 264);
             this.TitlesList.TabIndex = 17;
+<<<<<<< HEAD
             this.TitlesList.SelectedIndexChanged += new System.EventHandler(this.TitlesList_SelectedIndexChanged);
+=======
+<<<<<<< HEAD
+            this.TitlesList.SelectedIndexChanged += new System.EventHandler(this.TitlesList_SelectedIndexChanged);
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // EditButton
             // 

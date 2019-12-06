@@ -29,22 +29,47 @@
         private void InitializeComponent()
         {
             this.NewGroup = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.ToolsGroup = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+=======
+            this.GameGrid = new System.Windows.Forms.DataGridView();
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.ToolsGroup = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
             this.FaqButton = new System.Windows.Forms.Button();
             this.NewsButton = new System.Windows.Forms.Button();
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             this.ProfileButton = new System.Windows.Forms.Button();
             this.LoginButton = new System.Windows.Forms.Button();
             this.SearchBox = new System.Windows.Forms.RichTextBox();
             this.SearchButton = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.NewGroup.SuspendLayout();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.GameGrid)).BeginInit();
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.ToolsGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // NewGroup
             // 
+<<<<<<< HEAD
             this.NewGroup.Controls.Add(this.listBox1);
+=======
+<<<<<<< HEAD
+            this.NewGroup.Controls.Add(this.listBox1);
+=======
+            this.NewGroup.Controls.Add(this.GameGrid);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.NewGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.NewGroup.Location = new System.Drawing.Point(157, 52);
             this.NewGroup.Margin = new System.Windows.Forms.Padding(2);
@@ -54,13 +79,42 @@
             this.NewGroup.TabIndex = 4;
             this.NewGroup.TabStop = false;
             this.NewGroup.Text = "WHAT\'S NEW";
+<<<<<<< HEAD
             this.NewGroup.Enter += new System.EventHandler(this.NewGroup_Enter);
+=======
+<<<<<<< HEAD
+            this.NewGroup.Enter += new System.EventHandler(this.NewGroup_Enter);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(5, 24);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(601, 404);
+            this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
+=======
+            // 
+            // GameGrid
+            // 
+            this.GameGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GameGrid.Location = new System.Drawing.Point(5, 24);
+            this.GameGrid.Name = "GameGrid";
+            this.GameGrid.Size = new System.Drawing.Size(601, 407);
+            this.GameGrid.TabIndex = 0;
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // ToolsGroup
             // 
             this.ToolsGroup.Controls.Add(this.button8);
+<<<<<<< HEAD
+=======
             this.ToolsGroup.Controls.Add(this.FaqButton);
             this.ToolsGroup.Controls.Add(this.NewsButton);
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             this.ToolsGroup.Controls.Add(this.ProfileButton);
             this.ToolsGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.ToolsGroup.Location = new System.Drawing.Point(8, 52);
@@ -71,7 +125,14 @@
             this.ToolsGroup.TabIndex = 6;
             this.ToolsGroup.TabStop = false;
             this.ToolsGroup.Text = "Tools";
+<<<<<<< HEAD
             this.ToolsGroup.Enter += new System.EventHandler(this.ToolsGroup_Enter);
+=======
+<<<<<<< HEAD
+            this.ToolsGroup.Enter += new System.EventHandler(this.ToolsGroup_Enter);
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // button8
             // 
@@ -83,7 +144,13 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "Contact Us";
             this.button8.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.button8.Click += new System.EventHandler(this.button8_Click);
+=======
+<<<<<<< HEAD
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+=======
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // FaqButton
             // 
@@ -104,6 +171,7 @@
             this.NewsButton.TabIndex = 1;
             this.NewsButton.Text = "News Page";
             this.NewsButton.UseVisualStyleBackColor = true;
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
             // 
             // ProfileButton
             // 
@@ -177,6 +245,13 @@
             this.Text = "Homepage/Search";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.NewGroup.ResumeLayout(false);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.GameGrid)).EndInit();
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.ToolsGroup.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -186,13 +261,24 @@
         private System.Windows.Forms.GroupBox NewGroup;
         private System.Windows.Forms.GroupBox ToolsGroup;
         private System.Windows.Forms.Button button8;
+<<<<<<< HEAD
+        private System.Windows.Forms.Button ProfileButton;
+        private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.RichTextBox SearchBox;
+        private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.ListBox listBox1;
+=======
         private System.Windows.Forms.Button FaqButton;
         private System.Windows.Forms.Button NewsButton;
         private System.Windows.Forms.Button ProfileButton;
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.RichTextBox SearchBox;
         private System.Windows.Forms.Button SearchButton;
+<<<<<<< HEAD
         private System.Windows.Forms.ListBox listBox1;
+=======
+>>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
     }
 }
 

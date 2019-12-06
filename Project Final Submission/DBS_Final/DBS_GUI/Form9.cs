@@ -22,7 +22,11 @@ namespace DBS_GUI
             InitializeComponent();
             using (SqlConnection conn = new SqlConnection())
             {
+<<<<<<< HEAD
                 string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
+                string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                 //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                 conn.ConnectionString = cn;
                 conn.Open();
@@ -59,5 +63,13 @@ namespace DBS_GUI
         {
 
         }
+<<<<<<< HEAD
+=======
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
     }
 }
