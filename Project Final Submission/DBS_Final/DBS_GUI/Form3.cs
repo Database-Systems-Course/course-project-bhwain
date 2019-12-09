@@ -36,6 +36,9 @@ namespace DBS_GUI
 
         }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
 
         private void TitleBox_TextChanged(object sender, EventArgs e)
         {
@@ -49,6 +52,10 @@ namespace DBS_GUI
 
         private void WishButton_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+
+        }
+=======
             using (SqlConnection conn = new SqlConnection())
             {
                 string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
@@ -75,5 +82,6 @@ namespace DBS_GUI
         }
 =======
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
     }
 }

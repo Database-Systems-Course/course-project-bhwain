@@ -92,11 +92,15 @@
             this.WishCheck.AutoSize = true;
 <<<<<<< HEAD
             this.WishCheck.Enabled = false;
+=======
+<<<<<<< HEAD
+            this.WishCheck.Enabled = false;
             this.WishCheck.Location = new System.Drawing.Point(99, 155);
             this.WishCheck.Margin = new System.Windows.Forms.Padding(2);
             this.WishCheck.Name = "WishCheck";
             this.WishCheck.Size = new System.Drawing.Size(90, 24);
 =======
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.WishCheck.Location = new System.Drawing.Point(99, 155);
             this.WishCheck.Margin = new System.Windows.Forms.Padding(2);
             this.WishCheck.Name = "WishCheck";
@@ -112,11 +116,15 @@
             this.PurchasedCheck.AutoSize = true;
 <<<<<<< HEAD
             this.PurchasedCheck.Enabled = false;
+=======
+<<<<<<< HEAD
+            this.PurchasedCheck.Enabled = false;
             this.PurchasedCheck.Location = new System.Drawing.Point(99, 118);
             this.PurchasedCheck.Margin = new System.Windows.Forms.Padding(2);
             this.PurchasedCheck.Name = "PurchasedCheck";
             this.PurchasedCheck.Size = new System.Drawing.Size(113, 24);
 =======
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.PurchasedCheck.Location = new System.Drawing.Point(99, 118);
             this.PurchasedCheck.Margin = new System.Windows.Forms.Padding(2);
             this.PurchasedCheck.Name = "PurchasedCheck";
@@ -187,7 +195,11 @@
 <<<<<<< HEAD
             this.PublisherBox.TextChanged += new System.EventHandler(this.PublisherBox_TextChanged);
 =======
+<<<<<<< HEAD
+            this.PublisherBox.TextChanged += new System.EventHandler(this.PublisherBox_TextChanged);
+=======
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // TitleBox
             // 
@@ -199,7 +211,11 @@
 <<<<<<< HEAD
             this.TitleBox.TextChanged += new System.EventHandler(this.TitleBox_TextChanged);
 =======
+<<<<<<< HEAD
+            this.TitleBox.TextChanged += new System.EventHandler(this.TitleBox_TextChanged);
+=======
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // WishButton
             // 
@@ -214,7 +230,11 @@
 <<<<<<< HEAD
             this.WishButton.Click += new System.EventHandler(this.WishButton_Click);
 =======
+<<<<<<< HEAD
+            this.WishButton.Click += new System.EventHandler(this.WishButton_Click);
+=======
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // BuyButton
             // 

@@ -28,7 +28,14 @@ namespace DBS_GUI
 
             using (SqlConnection conn = new SqlConnection())
             {
+                string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
+<<<<<<< HEAD
+
+            using (SqlConnection conn = new SqlConnection())
+            {
                 string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                 //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                 conn.ConnectionString = cn;
                 conn.Open();
@@ -51,6 +58,11 @@ namespace DBS_GUI
             }
 
 
+<<<<<<< HEAD
+            using (SqlConnection conn = new SqlConnection())
+            {
+                string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
             using (SqlConnection conn = new SqlConnection())
             {
                 string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
@@ -61,6 +73,7 @@ namespace DBS_GUI
             {
                 string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\sj02806\\Downloads\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                 //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                 conn.ConnectionString = cn;
                 conn.Open();
@@ -68,8 +81,12 @@ namespace DBS_GUI
 <<<<<<< HEAD
                 SqlCommand command = new SqlCommand("SELECT Name, designation FROM [Employees] WHERE CONVERT(VARCHAR, Developers_idDevelopers) = '" + developerid + "';", conn);
 =======
+<<<<<<< HEAD
+                SqlCommand command = new SqlCommand("SELECT Name, designation FROM [Employees] WHERE CONVERT(VARCHAR, Developers_idDevelopers) = '" + developerid + "';", conn);
+=======
                 SqlCommand command = new SqlCommand("SELECT * FROM [Employees] WHERE CONVERT(VARCHAR, Developers_idDevelopers) = '" + developerid + "';", conn);
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                 
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
@@ -81,9 +98,14 @@ namespace DBS_GUI
                         string myString = String.Format("{0}", reader["Name"]);
                         DirectorBox.Text = String.Format("{0}", reader["Designation"]);
 =======
+<<<<<<< HEAD
+                        string myString = String.Format("{0}", reader["Name"]);
+                        DirectorBox.Text = String.Format("{0}", reader["Designation"]);
+=======
                         string myString = String.Format("{0}", reader["Developers_idDevelopers"]);
 
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                         myEmployees.Add(myString); 
                     }
                     TeamList.DataSource = myEmployees;
@@ -93,8 +115,12 @@ namespace DBS_GUI
 <<<<<<< HEAD
                 SqlCommand c = new SqlCommand("SELECT Title FROM [Game] WHERE CONVERT(VARCHAR, Developers_idDevelopers) = '" + developerid + "';", conn);
 =======
+<<<<<<< HEAD
+                SqlCommand c = new SqlCommand("SELECT Title FROM [Game] WHERE CONVERT(VARCHAR, Developers_idDevelopers) = '" + developerid + "';", conn);
+=======
                 SqlCommand c = new SqlCommand("SELECT * FROM [Game] WHERE CONVERT(VARCHAR, Developers_idDevelopers) = '" + developerid + "';", conn);
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
 
                 using (SqlDataReader reader = c.ExecuteReader())
                 {
@@ -105,8 +131,12 @@ namespace DBS_GUI
 <<<<<<< HEAD
                         string myString = String.Format("{0}", reader["Title"]);
 =======
+<<<<<<< HEAD
+                        string myString = String.Format("{0}", reader["Title"]);
+=======
                         string myString = String.Format("{0}", reader["Developers_idDevelopers"]);
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
 
                         myTitles.Add(myString);
                     }
@@ -182,12 +212,18 @@ namespace DBS_GUI
 
         }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
 
         private void TitlesList_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
     }
 }

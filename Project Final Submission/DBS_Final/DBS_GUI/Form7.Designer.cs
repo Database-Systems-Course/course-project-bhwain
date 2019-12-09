@@ -48,7 +48,11 @@
 <<<<<<< HEAD
             this.ResultGroup.Enter += new System.EventHandler(this.ResultGroup_Enter);
 =======
+<<<<<<< HEAD
+            this.ResultGroup.Enter += new System.EventHandler(this.ResultGroup_Enter);
+=======
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // ResultList
             // 

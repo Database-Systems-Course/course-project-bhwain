@@ -63,7 +63,10 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form9";
             this.Text = "Form9";
+<<<<<<< HEAD
+=======
             this.Load += new System.EventHandler(this.Form9_Load);
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

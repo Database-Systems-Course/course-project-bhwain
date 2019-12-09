@@ -15,6 +15,9 @@ namespace DBS_GUI
     {
         public string _textBox1 = "";
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
         string title = "";
         string publisher = "";
         List<Container> myList = new List<Container>();
@@ -26,6 +29,15 @@ namespace DBS_GUI
         private static readonly Random random = new Random();
         private static readonly object syncLock = new object();
         public Homepage(string name, string email, string password)
+<<<<<<< HEAD
+        {
+            InitializeComponent();
+            _textBox1 = "";
+            _name = name;
+            _email = email;
+            _password = password;
+          
+=======
         {
             InitializeComponent();
             _textBox1 = "";
@@ -40,17 +52,25 @@ namespace DBS_GUI
             InitializeComponent();
             _textBox1 = "";
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             using (SqlConnection conn = new SqlConnection())
             {
                
                 {
                     //join here
+<<<<<<< HEAD
+                    string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\123\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Database\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+=======
                     string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\si03013\\Downloads\\course-project-bhwain (2)\\course-project-bhwain\\course-project-bhwain\\course-project-bhwain\\Project Final Submission\\DBS_Final\\DBS_GUI\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
                     //conn.ConnectionString = "Server= (LocalDB)/MSSQLLocalDB; Database= Games; Integrated Security=True;";
                     conn.ConnectionString = cn;
                     conn.Open();
@@ -82,6 +102,19 @@ namespace DBS_GUI
                     }
                 }
                 conn.Close();
+<<<<<<< HEAD
+
+
+            }
+        }
+        public static int RandomNumber(int min, int max)
+        {
+            lock (syncLock)
+            { // synchronize
+                return random.Next(min, max);
+            }
+        }
+=======
 =======
            
         }
@@ -97,6 +130,7 @@ namespace DBS_GUI
                 return random.Next(min, max);
             }
         }
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -121,8 +155,12 @@ namespace DBS_GUI
 <<<<<<< HEAD
             Homepage f1 = new Homepage(_name,_email,_password);
 =======
+<<<<<<< HEAD
+            Homepage f1 = new Homepage(_name,_email,_password);
+=======
             Homepage f1 = new Homepage();
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             f1.ShowDialog();
         }
 
@@ -206,9 +244,56 @@ namespace DBS_GUI
             } 
         }
 =======
+<<<<<<< HEAD
+            CustomerForm f4 = new CustomerForm(_name,_email,_password);
+            f4.ShowDialog();
+        }
+
+        private void NewGroup_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GameGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form9 f9 = new Form9();
+            f9.ShowDialog();
+        }
+
+        private void ToolsGroup_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int index = this.listBox1.IndexFromPoint(e.Location);
+            if (index != System.Windows.Forms.ListBox.NoMatches)
+            {
+                Container con = myList[index];
+                title = con.con_title;
+                publisher = con.con_publisher;
+                genre = con.con_genre;
+
+                GameDetailForm f1 = new GameDetailForm(title, publisher, genre);
+                f1.ShowDialog();
+            } 
+        }
+=======
             CustomerForm f4 = new CustomerForm("","");
             f4.ShowDialog();
         }
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
     }
 }

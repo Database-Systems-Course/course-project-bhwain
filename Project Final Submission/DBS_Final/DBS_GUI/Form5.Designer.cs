@@ -53,8 +53,12 @@
 <<<<<<< HEAD
             this.label1.Size = new System.Drawing.Size(66, 24);
 =======
+<<<<<<< HEAD
+            this.label1.Size = new System.Drawing.Size(66, 24);
+=======
             this.label1.Size = new System.Drawing.Size(69, 24);
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.label1.TabIndex = 1;
             this.label1.Text = "Profile";
             // 
@@ -68,8 +72,12 @@
 <<<<<<< HEAD
             this.label2.Size = new System.Drawing.Size(116, 18);
 =======
+<<<<<<< HEAD
+            this.label2.Size = new System.Drawing.Size(116, 18);
+=======
             this.label2.Size = new System.Drawing.Size(125, 17);
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.label2.TabIndex = 7;
             this.label2.Text = "Company Name:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -93,8 +101,12 @@
 <<<<<<< HEAD
             this.label4.Size = new System.Drawing.Size(90, 18);
 =======
+<<<<<<< HEAD
+            this.label4.Size = new System.Drawing.Size(90, 18);
+=======
             this.label4.Size = new System.Drawing.Size(100, 17);
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.label4.TabIndex = 9;
             this.label4.Text = "Date Joined:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -118,8 +130,12 @@
 <<<<<<< HEAD
             this.label3.Size = new System.Drawing.Size(49, 18);
 =======
+<<<<<<< HEAD
+            this.label3.Size = new System.Drawing.Size(49, 18);
+=======
             this.label3.Size = new System.Drawing.Size(53, 17);
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.label3.TabIndex = 10;
             this.label3.Text = "Team:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -143,8 +159,12 @@
 <<<<<<< HEAD
             this.label5.Size = new System.Drawing.Size(64, 18);
 =======
+<<<<<<< HEAD
+            this.label5.Size = new System.Drawing.Size(64, 18);
+=======
             this.label5.Size = new System.Drawing.Size(71, 17);
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             this.label5.TabIndex = 13;
             this.label5.Text = "Director:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -173,7 +193,11 @@
 <<<<<<< HEAD
             this.TitlesList.SelectedIndexChanged += new System.EventHandler(this.TitlesList_SelectedIndexChanged);
 =======
+<<<<<<< HEAD
+            this.TitlesList.SelectedIndexChanged += new System.EventHandler(this.TitlesList_SelectedIndexChanged);
+=======
 >>>>>>> b79e8bd5ed5ccee801158c95bbcfcbe2d7ad730b
+>>>>>>> cfc300f427439963145d8568e4f842df0ad51d2b
             // 
             // EditButton
             // 
