@@ -1,0 +1,61 @@
+﻿<Window x:Class="project_bhwain.mainwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project_bhwain"
+        mc:Ignorable="d"
+        Title="mainwindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:GamesDataSet1 x:Key="gamesDataSet1"/>
+        <CollectionViewSource x:Key="tableViewSource" Source="{Binding Table, Source={StaticResource gamesDataSet1}}"/>
+    </Window.Resources>
+    <Grid Background="#FF2E2C2C">
+        <Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF113A81" Offset="0.996"/>
+                    <GradientStop Color="#FF2E2C2C"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Source="Images/bootlegsteam1.png" HorizontalAlignment="Left" Height="249" VerticalAlignment="Top" Width="242"/>
+        <TextBlock x:Name="Logo_Title" HorizontalAlignment="Left" Margin="189,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="218" FontSize="30" Foreground="#FFCDCDCD"><Run Text="Bootleg Steam"/></TextBlock>
+        <DataGrid  Height="261" Margin="587,148,10,0" VerticalAlignment="Top" ItemsSource="{Binding Source={StaticResource tableViewSource}}"/>
+        <Label Content="My Games" HorizontalAlignment="Left" Height="58" Margin="587,76,0,0" VerticalAlignment="Top" Width="195" FontSize="36" Foreground="#FFCDCDCD"/>
+        <GroupBox Header="My Profile" HorizontalAlignment="Left" Height="261" Margin="10,148,0,0" VerticalAlignment="Top" Width="375" Foreground="#FFC7CDCD" FontSize="36">
+            <Button Content="Edit" HorizontalAlignment="Left" Height="24" Margin="309,178,0,0" VerticalAlignment="Top" Width="50" Background="#FF2B2B2B" FontSize="14">
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+                <Button.Foreground>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+                </Button.Foreground>
+            </Button>
+        </GroupBox>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="31,249,0,0" VerticalAlignment="Top" FontSize="18" Background="Transparent" Width="340">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Current Balance:" HorizontalAlignment="Left" Margin="31,283,0,0" VerticalAlignment="Top" FontSize="18" Background="Transparent" Width="340">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="31,215,0,0" VerticalAlignment="Top" FontSize="18" Background="Transparent" Width="340">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="Search_button" Content="Store" HorizontalAlignment="Left" Margin="463,10,0,0" VerticalAlignment="Top" Width="73" Height="54" RenderTransformOrigin="0.5,0.5" FontSize="24"/>
+        <Button x:Name="Dev_Profile" Content="Dev_Profile" HorizontalAlignment="Left" Margin="541,10,0,0" VerticalAlignment="Top" Width="129" Height="54" RenderTransformOrigin="0.5,0.5" FontSize="24"/>
+        <DataGrid  Height="261" Margin="392,148,205,0" VerticalAlignment="Top" ItemsSource="{Binding Source={StaticResource tableViewSource}}"/>
+        <Label Content="Wishlist" HorizontalAlignment="Left" Height="58" Margin="392,76,0,0" VerticalAlignment="Top" Width="195" FontSize="36" Foreground="#FFCDCDCD"/>
+        <Button x:Name="Logout_button" Content="Logout" HorizontalAlignment="Left" Margin="675,11,0,0" VerticalAlignment="Top" Width="107" Height="54" RenderTransformOrigin="0.5,0.5" FontSize="24"/>
+
+    </Grid>
+</Window>

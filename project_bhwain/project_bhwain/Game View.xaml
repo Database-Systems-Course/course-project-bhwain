@@ -1,0 +1,41 @@
+﻿<Window x:Class="project_bhwain.Game_View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project_bhwain"
+        mc:Ignorable="d"
+        Title="Game_View" Height="429.897" Width="530.928">
+    <Grid Background="Black">
+        <Rectangle HorizontalAlignment="Left" Width="523">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF113A81" Offset="0.996"/>
+                    <GradientStop Color="#FF2E2C2C"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="Logo_Title" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Game Details" VerticalAlignment="Top" Height="48" Width="218" FontSize="30" Foreground="#FFCDCDCD"/>
+        <Image HorizontalAlignment="Left" Height="311" Margin="10,78,0,0" VerticalAlignment="Top" Width="218"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Height="37" Margin="247,78,0,0" VerticalAlignment="Top" Width="266" FontSize="18">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Price:" HorizontalAlignment="Left" Height="37" Margin="247,115,0,0" VerticalAlignment="Top" Width="266" FontSize="18">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Developer:" HorizontalAlignment="Left" Height="37" Margin="247,152,0,0" VerticalAlignment="Top" Width="266" FontSize="18">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Button Content="Buy Now" HorizontalAlignment="Left" Height="33" Margin="247,189,0,0" VerticalAlignment="Top" Width="77"/>
+        <Button Content="Add to Wishlist" HorizontalAlignment="Left" Height="33" Margin="329,189,0,0" VerticalAlignment="Top" Width="105"/>
+        <Button Content="View Developer Profile" HorizontalAlignment="Left" Height="33" Margin="247,227,0,0" VerticalAlignment="Top" Width="187"/>
+        <Button Content="Close" HorizontalAlignment="Left" Height="33" Margin="436,356,0,0" VerticalAlignment="Top" Width="77"/>
+
+    </Grid>
+</Window>

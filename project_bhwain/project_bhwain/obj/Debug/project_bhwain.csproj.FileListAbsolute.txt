@@ -1,0 +1,59 @@
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\bin\Debug\project_bhwain.exe.config
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\bin\Debug\project_bhwain.exe
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\bin\Debug\project_bhwain.pdb
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\project_bhwain.csprojAssemblyReference.cache
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\App.g.cs
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\project_bhwain_MarkupCompile.cache
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\project_bhwain_MarkupCompile.lref
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\project_bhwain.g.resources
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\project_bhwain.Properties.Resources.resources
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\project_bhwain.csproj.GenerateResource.cache
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\project_bhwain.csproj.CoreCompileInputs.cache
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\project_bhwain.exe
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\project_bhwain.pdb
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\BSLogin.g.cs
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\BSLogin.baml
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\mainwindow.g.cs
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\mainwindow.baml
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\project_bhwain_Content.g.cs
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\bin\Debug\Games.mdf
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\bin\Debug\Games_log.ldf
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\Store.g.cs
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\Store.baml
+C:\Users\zombi\source\repos\project_bhwain\project_bhwain\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\project_bhwain\project_bhwain\bin\Debug\Games.mdf
+D:\project_bhwain\project_bhwain\bin\Debug\Games_log.ldf
+D:\project_bhwain\project_bhwain\bin\Debug\project_bhwain.exe.config
+D:\project_bhwain\project_bhwain\bin\Debug\project_bhwain.exe
+D:\project_bhwain\project_bhwain\bin\Debug\project_bhwain.pdb
+D:\project_bhwain\project_bhwain\obj\Debug\project_bhwain.csprojAssemblyReference.cache
+D:\project_bhwain\project_bhwain\obj\Debug\BSLogin.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\mainwindow.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\Store.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\App.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\project_bhwain_Content.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\project_bhwain_MarkupCompile.cache
+D:\project_bhwain\project_bhwain\obj\Debug\project_bhwain_MarkupCompile.lref
+D:\project_bhwain\project_bhwain\obj\Debug\BSLogin.baml
+D:\project_bhwain\project_bhwain\obj\Debug\mainwindow.baml
+D:\project_bhwain\project_bhwain\obj\Debug\Store.baml
+D:\project_bhwain\project_bhwain\obj\Debug\project_bhwain.g.resources
+D:\project_bhwain\project_bhwain\obj\Debug\project_bhwain.Properties.Resources.resources
+D:\project_bhwain\project_bhwain\obj\Debug\project_bhwain.csproj.GenerateResource.cache
+D:\project_bhwain\project_bhwain\obj\Debug\project_bhwain.exe
+D:\project_bhwain\project_bhwain\obj\Debug\project_bhwain.pdb
+D:\project_bhwain\project_bhwain\obj\Debug\Add Balance Window.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\AddTeamMember.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\Developer Details.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\Developer Profile.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\Game View.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\Register.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\RegisterGame.g.cs
+D:\project_bhwain\project_bhwain\obj\Debug\Add Balance Window.baml
+D:\project_bhwain\project_bhwain\obj\Debug\AddTeamMember.baml
+D:\project_bhwain\project_bhwain\obj\Debug\Developer Details.baml
+D:\project_bhwain\project_bhwain\obj\Debug\Developer Profile.baml
+D:\project_bhwain\project_bhwain\obj\Debug\Game View.baml
+D:\project_bhwain\project_bhwain\obj\Debug\Register.baml
+D:\project_bhwain\project_bhwain\obj\Debug\RegisterGame.baml

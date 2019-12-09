@@ -1,0 +1,38 @@
+﻿<Window x:Class="project_bhwain.Store"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project_bhwain"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Store" Height="768" Width="1366" Loaded="Window_Loaded" Background="White">
+    <Window.Resources>
+        <local:GamesDataSet x:Key="gamesDataSet"/>
+        <CollectionViewSource x:Key="gameViewSource" Source="{Binding Game, Source={StaticResource gamesDataSet}}"/>
+        <local:GamesDataSet1 x:Key="gamesDataSet1"/>
+        <CollectionViewSource x:Key="tableViewSource" Source="{Binding Table, Source={StaticResource gamesDataSet1}}"/>
+        <local:GamesDataSet2 x:Key="gamesDataSet2"/>
+        <CollectionViewSource x:Key="frontpageViewSource" Source="{Binding frontpage, Source={StaticResource gamesDataSet2}}"/>
+    </Window.Resources>
+    <Grid Background="#FF2E2C2C" DataContext="{StaticResource gameViewSource}">
+        <Rectangle Margin="0,93,0,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF113A81" Offset="0.996"/>
+                    <GradientStop Color="#FF2E2C2C"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBox x:Name="Search_bar" HorizontalAlignment="Left" Height="53" Margin="564,19,0,0" TextWrapping="Wrap" Text="Search the Store" VerticalAlignment="Top" Width="444" FontSize="36" Background="#FF2E2C2C" BorderBrush="#FF7F7B7B" SelectionBrush="#FF7F7B7B" Foreground="#FFF4F4F7" BorderThickness="2" Grid.Row="1"/>
+        <Button x:Name="Search_button" Content="Search 🔍" HorizontalAlignment="Left" Margin="1033,19,0,0" VerticalAlignment="Top" Width="155" Height="54" RenderTransformOrigin="0.5,0.5" FontSize="24"/>
+
+        <Button x:Name="User_ID" Content="🆔" HorizontalAlignment="Left" Margin="1193,19,0,0" VerticalAlignment="Top" Width="61" Height="54" FontSize="36" Grid.Row="1"/>
+        <Image Source="Images/bootlegsteam1.png" HorizontalAlignment="Left" Height="249" VerticalAlignment="Top" Width="242" Grid.RowSpan="2"/>
+        <TextBlock x:Name="Logo_Title" HorizontalAlignment="Left" Margin="189,0,0,0" TextWrapping="Wrap" Text="Bootleg Steam" VerticalAlignment="Top" Height="48" Width="218" FontSize="30" Foreground="#FFCDCDCD"/>
+        <DataGrid  Height="542" Margin="106,159,106,0" VerticalAlignment="Top" ItemsSource="{Binding Source={StaticResource frontpageViewSource}}" />
+        <Button Content="Add Balance" HorizontalAlignment="Left" Height="53" Margin="1033,93,0,0" VerticalAlignment="Top" Width="221" FontSize="36"/>
+        <TextBox x:Name="Balance" HorizontalAlignment="Left" Height="53" Margin="564,93,0,0" TextWrapping="Wrap" Text="Account Balance:" VerticalAlignment="Top" Width="444" FontSize="36" Background="#FF2E2C2C" BorderBrush="#FF7F7B7B" SelectionBrush="#FF7F7B7B" Foreground="#FFF4F4F7" BorderThickness="2"/>
+
+    </Grid>
+</Window>
