@@ -57,3 +57,39 @@ D:\project_bhwain\project_bhwain\obj\Debug\Developer Profile.baml
 D:\project_bhwain\project_bhwain\obj\Debug\Game View.baml
 D:\project_bhwain\project_bhwain\obj\Debug\Register.baml
 D:\project_bhwain\project_bhwain\obj\Debug\RegisterGame.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\bin\Debug\Games.mdf
+D:\course-project-bhwain\project_bhwain\project_bhwain\bin\Debug\Games_log.ldf
+D:\course-project-bhwain\project_bhwain\project_bhwain\bin\Debug\project_bhwain.exe.config
+D:\course-project-bhwain\project_bhwain\project_bhwain\bin\Debug\project_bhwain.exe
+D:\course-project-bhwain\project_bhwain\project_bhwain\bin\Debug\project_bhwain.pdb
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\project_bhwain.csprojAssemblyReference.cache
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Add Balance Window.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\AddTeamMember.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\BSLogin.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Developer Details.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Developer Profile.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Game View.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\mainwindow.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Register.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\RegisterGame.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Store.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\App.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\project_bhwain_Content.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\project_bhwain_MarkupCompile.cache
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\project_bhwain_MarkupCompile.lref
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Add Balance Window.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\AddTeamMember.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\BSLogin.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Developer Details.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Developer Profile.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Game View.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\mainwindow.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Register.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\RegisterGame.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\Store.baml
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\project_bhwain.g.resources
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\project_bhwain.Properties.Resources.resources
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\project_bhwain.csproj.GenerateResource.cache
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\project_bhwain.exe
+D:\course-project-bhwain\project_bhwain\project_bhwain\obj\Debug\project_bhwain.pdb

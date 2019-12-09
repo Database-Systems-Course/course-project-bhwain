@@ -15,13 +15,13 @@
         <Image Source="images/bootlegsteam1.png" HorizontalAlignment="Left" Height="249" Margin="73,42,0,0" VerticalAlignment="Top" Width="242" Grid.RowSpan="2"/>
         <TextBox x:Name="Username" Height="23" Margin="262,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="437" Background="#FF2E2C2C" BorderBrush="#FFCDCDCD" Foreground="#FFCDCDCD" FontSize="15" Grid.Row="1"/>
         <TextBox x:Name="Password" Height="24" Margin="262,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="437" Background="#FF2E2C2C" BorderBrush="#FFCDCDCD" Foreground="#FFCDCDCD" FontSize="15" Grid.Row="1"/>
-        <TextBlock x:Name="Account_Name" HorizontalAlignment="Left" Margin="111,81,0,0" TextWrapping="Wrap" Text="Account Name:" VerticalAlignment="Top" Height="23" Width="146" FontSize="18" Foreground="#FFCDCDCD" Grid.Row="1"/>
-        <TextBlock x:Name="Account_Password" HorizontalAlignment="Left" Margin="159,121,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Height="23" Width="98" FontSize="18" Foreground="#FFCDCDCD" Grid.Row="1"/>
+        <TextBlock x:Name="Account_Name" HorizontalAlignment="Left" Margin="111,81,0,0" TextWrapping="Wrap" Text="Email ID:" VerticalAlignment="Top" Height="23" Width="146" FontSize="18" Foreground="#FFCDCDCD" Grid.Row="1" TextAlignment="Right"/>
+        <TextBlock x:Name="Account_Password" HorizontalAlignment="Left" Margin="159,121,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Height="23" Width="98" FontSize="18" Foreground="#FFCDCDCD" Grid.Row="1" TextAlignment="Right"/>
         <TextBlock x:Name="Login_Title" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Height="46" Width="170" FontSize="26" Foreground="#FFCDCDCD"/>
         <TextBlock x:Name="Logo_Title" HorizontalAlignment="Left" Margin="262,42,0,0" TextWrapping="Wrap" Text="Bootleg Steam" VerticalAlignment="Top" Height="48" Width="218" FontSize="30" Foreground="#FFCDCDCD"/>
         <TextBox x:Name="Error_MSG" Height="39" Margin="102,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="597" Background="#FF2E2C2C" BorderBrush="#FF2E2C2C" Foreground="#FFCDCDCD" FontSize="18" Grid.Row="1" Visibility="Hidden"/>
         <TextBlock x:Name="Signup_Title" HorizontalAlignment="Left" Margin="36,254,0,0" TextWrapping="Wrap" Text="Don't have an account?" VerticalAlignment="Top" Height="24" Width="212" FontSize="20" Foreground="#FFCDCDCD" Grid.Row="1" TextAlignment="Right"/>
-        <Button x:Name="Sign_up" Content="CREATE A NEW ACCOUNT..." HorizontalAlignment="Left" Margin="262,259,0,0" Grid.Row="1" VerticalAlignment="Top" Width="428" Height="24" Foreground="White">
+        <Button x:Name="Sign_up" Content="CREATE A NEW ACCOUNT..." HorizontalAlignment="Left" Margin="262,259,0,0" Grid.Row="1" VerticalAlignment="Top" Width="428" Height="24" Foreground="White" Click="Sign_up_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FF2E2C2C" Offset="1"/>
@@ -38,7 +38,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="495,155,0,0" Grid.Row="1" VerticalAlignment="Top" Width="204" Height="24" Foreground="White">
+        <Button x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="495,155,0,0" Grid.Row="1" VerticalAlignment="Top" Width="204" Height="24" Foreground="White" Click="Cancel_Click_1">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FF2E2C2C" Offset="1"/>

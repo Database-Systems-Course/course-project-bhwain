@@ -39,9 +39,8 @@ namespace project_bhwain
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["GamesConnectionString"].ConnectionString);
             SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\zombi\\source\\repos\\project_bhwain\\project_bhwain\\Games.mdf;Integrated Security=True;Connect Timeout=30";
+            conn.ConnectionString = "Data Source=(LocalDB)/MSSQLLocalDB;AttachDbFilename=D:/course-project-bhwain/project_bhwain/project_bhwain/Games.mdf;Integrated Security=True;Connect Timeout=30";
             conn.Open();
             string checkuser = "SELECT COUNT(*) FROM Users WHERE emailID ='" + Username.Text + "'" + "AND PASSWORD_2 = '" + Password.Text + "'";
             SqlCommand com = new SqlCommand(checkuser, conn);
@@ -60,8 +59,22 @@ namespace project_bhwain
                 this.Close();
             }
             else
-            { }
+            {
+                MessageBox.Show("No such User exists");
+            }
       
+        }
+
+        private void Sign_up_Click(object sender, RoutedEventArgs e)
+        {
+            Register Registration = new Register();
+            Registration.Show();
+            this.Close();
+        }
+
+        private void Cancel_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

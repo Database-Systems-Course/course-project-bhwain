@@ -24,33 +24,9 @@ namespace project_bhwain
     public partial class Store : Window
     {
         public Store(String ID)
-        {   
-            List<items> it = new List<items>();
+        {
             InitializeComponent();
-
-            /*//SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["GamesConnectionString"].ConnectionString);
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\zombi\\source\\repos\\project_bhwain\\project_bhwain\\Games.mdf;Integrated Security=True;Connect Timeout=30";
-            conn.Open();
-            string bring_trending_games = "SELECT Top 10 G.Title,G.Price,D.DeveloperName FROM Game G,Developers D WHERE (G.Developers_idDevelopers=idDevelopers )";
-            SqlCommand SCMD = new SqlCommand(bring_trending_games,conn);
-            SCMD.ExecuteNonQuery();
-            SqlDataAdapter sda = new SqlDataAdapter(bring_trending_games,conn);
-            DataTable Dtbl = new DataTable(); ;
-            sda.Fill(Dtbl);
-            dg.ItemsSource = Dtbl.DefaultView;
-            sda.Update(Dtbl);
-            conn.Close();
-            //SqlCommand com = new SqlCommand(bring_trending_games, conn);
-            //com.ExecuteScalar();
-            conn.Close();
-
-            it.Add(new items { Game_Name = "Asdf", Price = 69.69, Developer = "5318008" });
-            dg.ItemsSource = it;
-            */
-
-
-        
+            string UserID = ID;
         }
         class items
         {
